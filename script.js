@@ -176,8 +176,33 @@ const translations = {
 };
 
 const params = new URLSearchParams(window.location.search);
-const requestedLang = params.get("lang");
-const lang = Object.prototype.hasOwnProperty.call(translations, requestedLang) ? requestedLang : "de";
+const isSupportedLang = (value) => Object.prototype.hasOwnProperty.call(translations, value);
+const normalizeLang = (value = "") => value.toLowerCase().split("-")[0];
+const getStoredLang = () => {
+  try {
+    return window.localStorage?.getItem("dorianKesslerLang");
+  } catch {
+    return null;
+  }
+};
+const storeLang = (value) => {
+  try {
+    window.localStorage?.setItem("dorianKesslerLang", value);
+  } catch {
+    // Some privacy modes block localStorage; the URL and browser language still work.
+  }
+};
+const browserLang = (navigator.languages || [navigator.language || ""])
+  .map(normalizeLang)
+  .find(isSupportedLang);
+const requestedLang = normalizeLang(params.get("lang") || "");
+const storedLang = getStoredLang();
+const lang = isSupportedLang(requestedLang)
+  ? requestedLang
+  : isSupportedLang(storedLang)
+    ? storedLang
+    : browserLang || "de";
+if (isSupportedLang(requestedLang)) storeLang(requestedLang);
 const t = translations[lang];
 const setText = (selector, value) => {
   const element = document.querySelector(selector);
@@ -196,6 +221,9 @@ document.querySelector(".language-nav")?.setAttribute("aria-label", t.languageLa
 document.querySelectorAll(".language-nav a").forEach((anchor) => {
   if (anchor.dataset.lang === lang) anchor.setAttribute("aria-current", "page");
   else anchor.removeAttribute("aria-current");
+  anchor.addEventListener("click", () => {
+    if (isSupportedLang(anchor.dataset.lang)) storeLang(anchor.dataset.lang);
+  });
 });
 document.querySelectorAll(".site-nav a").forEach((anchor, index) => {
   anchor.textContent = t.nav[index] || anchor.textContent;
