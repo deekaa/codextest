@@ -25,7 +25,7 @@ const translations = {
     portraitAlt: "Porträt von Prof. Dr. Dorian Kessler",
     portraitCaption: "Prof. Dr. Dorian Kessler, BFH Soziale Arbeit",
     profileKicker: "Profil",
-    profileTitle: "Datenwissenschaft in der Sozialen Arbeit mit Schwerpunkt Wirksamkeit.",
+    profileTitle: "Daten, Wirkung und Soziale Arbeit.",
     profileText: [
       `Ich bin als Forscher und Dozent an der ${makeLink(BFH_LINK, "BFH Soziale Arbeit")} und am ${makeLink(
         IORG_LINK,
@@ -82,7 +82,7 @@ const translations = {
     portraitAlt: "Portrait of Prof. Dr. Dorian Kessler",
     portraitCaption: "Prof. Dr. Dorian Kessler, BFH School of Social Work",
     profileKicker: "Profile",
-    profileTitle: "Data science in social work with a focus on impact.",
+    profileTitle: "Data, impact and social work.",
     profileText: [
       `I work as a researcher and lecturer at the ${makeLink(BFH_LINK, "BFH School of Social Work")} and at the ${makeLink(IORG_LINK, "Institute for Organisation and Social Management")}. I use linked data to study impact, poverty, family, health and social policy empirically.`,
       "Linked data are datasets that are combined in a privacy-preserving way, for example information on social assistance, social insurance, health, employment histories, households or family events. This makes transitions and burdens visible that often remain only partly observable in individual data sources.",
@@ -136,7 +136,7 @@ const translations = {
     portraitAlt: "Portrait du Prof. Dr. Dorian Kessler",
     portraitCaption: "Prof. Dr. Dorian Kessler, BFH Travail social",
     profileKicker: "Profil",
-    profileTitle: "Science des données en travail social, avec un accent sur les effets.",
+    profileTitle: "Données, effets et travail social.",
     profileText: [
       `Je travaille comme chercheur et enseignant à la ${makeLink(BFH_LINK, "BFH Travail social")} et à l'${makeLink(IORG_LINK, "Institut Organisation et management social")}. J'utilise des données liées pour étudier empiriquement les effets, la pauvreté, la famille, la santé et la politique sociale.`,
       "Les données liées sont des jeux de données réunis dans le respect de la protection des données, par exemple des informations sur l'aide sociale, les assurances sociales, la santé, les parcours professionnels, les ménages ou les événements familiaux.",
