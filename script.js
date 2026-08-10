@@ -13,7 +13,7 @@ const translations = {
       "Persönliche Profilseite von Prof. Dr. Dorian Kessler zu Wirksamkeit, Datenverknüpfung, Predictive Risk Models, generativer KI, Armut, Familie und sozialer Sicherheit.",
     headerLabel: "Hauptnavigation",
     languageLabel: "Sprachen",
-    nav: ["Profil", "Projekte", "Publikationen", "Kontakt"],
+    nav: ["Profil", "Projekte", "Lehre", "Publikationen", "Kontakt"],
     context: `${makeLink(BFH_LINK, "BFH Soziale Arbeit")} · ${makeLink(
       IORG_LINK,
       "Institut Organisation und Sozialmanagement"
@@ -22,6 +22,21 @@ const translations = {
       "Ich arbeite zu Wirksamkeit sozialer Organisationen, Datenwissenschaft in der Sozialen Arbeit und sozialen Risiken im Zusammenspiel von Armut, Familie, Gesundheit und Sozialpolitik.",
     profileButton: "Profil",
     projectButton: "Projekte",
+    teachingButton: "Lehre",
+    teaching: {
+      kicker: "Lehre",
+      title: "Spezialmodule im Bachelor Soziale Arbeit.",
+      intro: "Ich lehre im Bachelor und Master Soziale Arbeit zu Daten, Digitalisierung, quantitativen Methoden und Sozialpolitik. Im Zentrum stehen Formate, die aktuelle Fragen, Praxisbezug und forschungsbasiertes Arbeiten verbinden.",
+      specialTag: "Spezialmodule · Bachelor Soziale Arbeit · seit HS 2023",
+      specialTitle: "Aktuelle Themen in kompakten Formaten",
+      specialText: "Spezialmodule sind 3-ECTS-Module, in denen Studierende während des Bachelorstudiums aktuelle Fragen, Entwicklungen und spezifische Themen der Sozialen Arbeit bearbeiten. Die Module können aus der BFH heraus oder gemeinsam mit Fachpersonen aus dem Praxisfeld entwickelt werden.",
+      specialItems: ["Formate: Blockmodul, Praxiskooperation, Partnerhochschule, COIL, Studienreise oder Tagung", "Perspektiven: Praxis, Forschung, Vergleich, Interdisziplinarität und Internationalität", "Prozess: Ideenskizze, Auswahl, Durchführung und Evaluation des Moduls"],
+      listTitle: "Weitere Lehrangebote und Begleitungen",
+      offers: [["HS 2024-2025", "Data Skills for Social Work Professionals", "Datenanalyse mit realen Fragestellungen aus Organisationen der Sozialen Arbeit."], ["HS 2024", "Digitalized Social Work", "Digitale Werkzeuge, Chancen und Risiken für die Praxis Sozialer Arbeit."], ["FS 2024", "Large Language Models in der Praxisforschung", "Forschungswerkstatt zu LLM in qualitativer und quantitativer Praxisforschung."], ["seit HS 2023", "Wissen erarbeiten und quantitative Sozialforschung", "Methodisches Arbeiten, Daten verstehen, Evidenz kritisch bewerten."], ["2015-2023", "Sozialpolitik, Methoden und R", "Sozialpolitik im BSc, Einführung in quantitative Methoden und R-Lehre im CAS Datenanalyse."], ["seit HS 2023", "Bachelor- und Masterarbeiten", "Begleitung empirischer Arbeiten mit Fokus auf Forschungsfrage, Design und Interpretation."]],
+      transferTag: "Beispiel Praxistransfer",
+      transferText: "Im Modul Data Skills wurden Analysen zu Nutzungs- und Bevölkerungsdaten der JuBU später in der Kommunikation der Praxisorganisation aufgegriffen. Der LinkedIn-Beitrag zeigt den Kontext und das verwendete Bildmaterial.",
+      transferLink: "LinkedIn-Beitrag öffnen",
+    },
     publicationButton: "Ausgewählte Publikationen",
     portraitAlt: "Porträt von Prof. Dr. Dorian Kessler",
     portraitCaption: "Prof. Dr. Dorian Kessler, BFH Soziale Arbeit",
@@ -71,7 +86,7 @@ const translations = {
       "Personal profile of Prof. Dr. Dorian Kessler on impact, linked data, predictive risk models, generative AI, poverty, family and social security.",
     headerLabel: "Main navigation",
     languageLabel: "Languages",
-    nav: ["Profile", "Projects", "Publications", "Contact"],
+    nav: ["Profile", "Projects", "Teaching", "Publications", "Contact"],
     context: `${makeLink(BFH_LINK, "BFH School of Social Work")} · ${makeLink(
       IORG_LINK,
       "Institute for Organisation and Social Management"
@@ -80,6 +95,21 @@ const translations = {
       "My work focuses on the impact of social organisations, data science in social work, and social risks at the intersection of poverty, family, health and social policy.",
     profileButton: "Profile",
     projectButton: "Projects",
+    teachingButton: "Teaching",
+    teaching: {
+      kicker: "Teaching",
+      title: "Special modules in the Bachelor programme in Social Work.",
+      intro: "I teach in the Bachelor and Master programmes in Social Work on data, digitalisation, quantitative methods and social policy. The focus is on formats that connect current questions, practice links and research-based work.",
+      specialTag: "Special modules · Bachelor Social Work · since autumn semester 2023",
+      specialTitle: "Current topics in compact formats",
+      specialText: "Special modules are 3 ECTS modules in which students work on current questions, developments and specific topics in social work during the Bachelor programme. Modules can be developed from within BFH or together with professionals from the field.",
+      specialItems: ["Formats: block module, practice cooperation, partner university, COIL, study trip or conference", "Perspectives: practice, research, comparison, interdisciplinarity and internationality", "Process: idea sketch, selection, implementation and evaluation of the module"],
+      listTitle: "Further courses and supervision",
+      offers: [["Autumn 2024-2025", "Data Skills for Social Work Professionals", "Data analysis with real questions from social work organisations."], ["Autumn 2024", "Digitalized Social Work", "Digital tools, opportunities and risks for social work practice."], ["Spring 2024", "Large Language Models in practice research", "Research workshop on LLMs in qualitative and quantitative practice research."], ["since autumn 2023", "Academic work and quantitative social research", "Methodological work, understanding data and critically assessing evidence."], ["2015-2023", "Social policy, methods and R", "Social policy in the BSc, introduction to quantitative methods and R teaching in the CAS Data Analysis."], ["since autumn 2023", "Bachelor's and master's theses", "Supervision of empirical work with a focus on research question, design and interpretation."]],
+      transferTag: "Practice transfer example",
+      transferText: "In the Data Skills module, analyses of JuBU usage and population data were later taken up in the practice organisation's communication. The LinkedIn post shows the context and the image material used.",
+      transferLink: "Open LinkedIn post",
+    },
     publicationButton: "Selected publications",
     portraitAlt: "Portrait of Prof. Dr. Dorian Kessler",
     portraitCaption: "Prof. Dr. Dorian Kessler, BFH School of Social Work",
@@ -126,7 +156,7 @@ const translations = {
       "Page personnelle du Prof. Dr. Dorian Kessler sur les effets, les données liées, les modèles prédictifs de risque, l'IA générative, la pauvreté, la famille et la sécurité sociale.",
     headerLabel: "Navigation principale",
     languageLabel: "Langues",
-    nav: ["Profil", "Projets", "Publications", "Contact"],
+    nav: ["Profil", "Projets", "Enseignement", "Publications", "Contact"],
     context: `${makeLink(BFH_LINK, "BFH Travail social")} · ${makeLink(
       IORG_LINK,
       "Institut Organisation et management social"
@@ -135,6 +165,21 @@ const translations = {
       "Mes travaux portent sur les effets des organisations sociales, la science des données en travail social et les risques sociaux à l'intersection de la pauvreté, de la famille, de la santé et de la politique sociale.",
     profileButton: "Profil",
     projectButton: "Projets",
+    teachingButton: "Enseignement",
+    teaching: {
+      kicker: "Enseignement",
+      title: "Modules spéciaux dans le bachelor en travail social.",
+      intro: "J'enseigne dans les programmes bachelor et master en travail social sur les données, la numérisation, les méthodes quantitatives et la politique sociale. L'accent porte sur des formats qui relient questions actuelles, lien à la pratique et travail fondé sur la recherche.",
+      specialTag: "Modules spéciaux · bachelor en travail social · depuis le semestre d'automne 2023",
+      specialTitle: "Thèmes actuels dans des formats compacts",
+      specialText: "Les modules spéciaux sont des modules de 3 ECTS dans lesquels les étudiantes et étudiants traitent, pendant le bachelor, des questions actuelles, des développements et des thèmes spécifiques du travail social. Ils peuvent être développés au sein de la BFH ou avec des professionnel-le-s du terrain.",
+      specialItems: ["Formats: module bloc, coopération avec la pratique, haute école partenaire, COIL, voyage d'études ou conférence", "Perspectives: pratique, recherche, comparaison, interdisciplinarité et internationalité", "Processus: esquisse d'idée, sélection, réalisation et évaluation du module"],
+      listTitle: "Autres enseignements et accompagnements",
+      offers: [["Automne 2024-2025", "Data Skills for Social Work Professionals", "Analyse de données avec des questions réelles issues d'organisations du travail social."], ["Automne 2024", "Digitalized Social Work", "Outils numériques, possibilités et risques pour la pratique du travail social."], ["Printemps 2024", "Large Language Models dans la recherche de pratique", "Atelier de recherche sur les LLM dans la recherche de pratique qualitative et quantitative."], ["depuis automne 2023", "Travail scientifique et recherche sociale quantitative", "Travail méthodologique, compréhension des données et évaluation critique des preuves."], ["2015-2023", "Politique sociale, méthodes et R", "Politique sociale en bachelor, introduction aux méthodes quantitatives et enseignement de R dans le CAS Analyse de données."], ["depuis automne 2023", "Travaux de bachelor et de master", "Accompagnement de travaux empiriques avec un accent sur la question de recherche, le design et l'interprétation."]],
+      transferTag: "Exemple de transfert vers la pratique",
+      transferText: "Dans le module Data Skills, des analyses des données d'utilisation et de population de la JuBU ont ensuite été reprises dans la communication de l'organisation de terrain. La publication LinkedIn montre le contexte et le matériel visuel utilisé.",
+      transferLink: "Ouvrir la publication LinkedIn",
+    },
     publicationButton: "Publications choisies",
     portraitAlt: "Portrait du Prof. Dr. Dorian Kessler",
     portraitCaption: "Prof. Dr. Dorian Kessler, BFH Travail social",
@@ -235,6 +280,7 @@ document.querySelectorAll(".site-nav a").forEach((anchor, index) => {
 setText(".lead", t.lead);
 setText('.hero-actions a[href="#profil"]', t.profileButton);
 setText('.hero-actions a[href="#projekte"]', t.projectButton);
+setText('.hero-actions a[href="#lehre"]', t.teachingButton);
 setText('.hero-actions a[href="#publikationen"]', t.publicationButton);
 const portraitImageNew = document.querySelector(".portrait img");
 if (portraitImageNew) {
@@ -247,6 +293,32 @@ setText("#profil h2", t.profileTitle);
 document.querySelectorAll("#profil .profile-copy p").forEach((paragraph, index) => {
   paragraph.innerHTML = t.profileText[index] || paragraph.innerHTML;
 });
+
+
+if (t.teaching) {
+  const teaching = t.teaching;
+  setText("#lehre .kicker", teaching.kicker);
+  setText("#lehre h2", teaching.title);
+  setText("#lehre .teaching-intro", teaching.intro);
+  setText("#lehre .teaching-highlight .tag", teaching.specialTag);
+  setText("#lehre .teaching-highlight h3", teaching.specialTitle);
+  setText("#lehre .teaching-highlight p", teaching.specialText);
+  document.querySelectorAll("#lehre .teaching-highlight li").forEach((item, index) => {
+    item.textContent = teaching.specialItems[index] || item.textContent;
+  });
+  setText("#lehre .teaching-offers > h3", teaching.listTitle);
+  document.querySelectorAll("#lehre .teaching-offer").forEach((card, index) => {
+    const offer = teaching.offers[index];
+    if (!offer) return;
+    card.querySelector("span").textContent = offer[0];
+    card.querySelector("h4").textContent = offer[1];
+    card.querySelector("p").textContent = offer[2];
+  });
+  setText("#lehre .teaching-transfer-note span", teaching.transferTag);
+  setText("#lehre .teaching-transfer-note p", teaching.transferText);
+  setText("#lehre .teaching-transfer-note a", teaching.transferLink);
+}
+
 setText("#projekte .kicker", t.projectsKicker);
 setText("#projekte h2", t.projectsTitle);
 Object.entries(t.filters).forEach(([key, value]) => {
