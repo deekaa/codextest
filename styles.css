@@ -1128,3 +1128,17 @@ h3 {
 .teaching-highlight li:first-child {
   border-color: var(--line-strong);
 }
+
+
+.special-contact {
+  grid-column: 1 / -1;
+  margin: 2px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.special-contact .text-link {
+  margin-left: 8px;
+}

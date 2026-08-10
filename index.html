@@ -117,6 +117,10 @@
               <li>Perspektiven: Praxis, Forschung, Vergleich, Interdisziplinarität und Internationalität</li>
               <li>Prozess: Ideenskizze, Auswahl, Durchführung und Evaluation des Moduls</li>
             </ul>
+            <p class="special-contact">
+              Interessierte Fachpersonen können mich für eine erste Einschätzung kontaktieren.
+              <a class="text-link" href="https://www.bfh.ch/dam/jcr:9e64e5ff-9542-4e6e-8cf6-9fad97499765/240312_Flyer_Spezialmodule.pdf" target="_blank" rel="noreferrer">Flyer Spezialmodule öffnen</a>
+            </p>
           </article>
 
           <div class="teaching-offers" aria-label="Weitere Lehrangebote">
@@ -549,6 +553,8 @@ const BFH_IMAGE =
 const BFH_LINK = "https://www.bfh.ch/soziale-arbeit/de/";
 const IORG_LINK =
   "https://www.bfh.ch/soziale-arbeit/de/forschung/forschungsbereiche/institut-organisation-sozialmanagement/";
+const SPECIAL_FLYER_LINK =
+  "https://www.bfh.ch/dam/jcr:9e64e5ff-9542-4e6e-8cf6-9fad97499765/240312_Flyer_Spezialmodule.pdf";
 const makeLink = (href, text) =>
   `<a class="inline-link" href="${href}" target="_blank" rel="noreferrer">${text}</a>`;
 
@@ -577,6 +583,8 @@ const translations = {
       specialTitle: "Aktuelle Themen in kompakten Formaten",
       specialText: "Spezialmodule sind 3-ECTS-Module, in denen Studierende während des Bachelorstudiums aktuelle Fragen, Entwicklungen und spezifische Themen der Sozialen Arbeit bearbeiten. Die Module können aus der BFH heraus oder gemeinsam mit Fachpersonen aus dem Praxisfeld entwickelt werden.",
       specialItems: ["Formate: Blockmodul, Praxiskooperation, Partnerhochschule, COIL, Studienreise oder Tagung", "Perspektiven: Praxis, Forschung, Vergleich, Interdisziplinarität und Internationalität", "Prozess: Ideenskizze, Auswahl, Durchführung und Evaluation des Moduls"],
+      specialContact: "Interessierte Fachpersonen können mich für eine erste Einschätzung kontaktieren.",
+      specialFlyer: "Flyer Spezialmodule öffnen",
       listTitle: "Weitere Lehrangebote und Begleitungen",
       offers: [["HS 2024-2025", "Data Skills for Social Work Professionals", "Datenanalyse mit realen Fragestellungen aus Organisationen der Sozialen Arbeit."], ["HS 2024", "Digitalized Social Work", "Digitale Werkzeuge, Chancen und Risiken für die Praxis Sozialer Arbeit."], ["FS 2024", "Large Language Models in der Praxisforschung", "Forschungswerkstatt zu LLM in qualitativer und quantitativer Praxisforschung."], ["seit HS 2023", "Wissen erarbeiten und quantitative Sozialforschung", "Methodisches Arbeiten, Daten verstehen, Evidenz kritisch bewerten."], ["2015-2023", "Sozialpolitik, Methoden und R", "Sozialpolitik im BSc, Einführung in quantitative Methoden und R-Lehre im CAS Datenanalyse."], ["seit HS 2023", "Bachelor- und Masterarbeiten", "Begleitung empirischer Arbeiten mit Fokus auf Forschungsfrage, Design und Interpretation."]],
       transferTag: "Beispiel Praxistransfer",
@@ -650,6 +658,8 @@ const translations = {
       specialTitle: "Current topics in compact formats",
       specialText: "Special modules are 3 ECTS modules in which students work on current questions, developments and specific topics in social work during the Bachelor programme. Modules can be developed from within BFH or together with professionals from the field.",
       specialItems: ["Formats: block module, practice cooperation, partner university, COIL, study trip or conference", "Perspectives: practice, research, comparison, interdisciplinarity and internationality", "Process: idea sketch, selection, implementation and evaluation of the module"],
+      specialContact: "Interested professionals can contact me for an initial assessment.",
+      specialFlyer: "Open special modules flyer",
       listTitle: "Further courses and supervision",
       offers: [["Autumn 2024-2025", "Data Skills for Social Work Professionals", "Data analysis with real questions from social work organisations."], ["Autumn 2024", "Digitalized Social Work", "Digital tools, opportunities and risks for social work practice."], ["Spring 2024", "Large Language Models in practice research", "Research workshop on LLMs in qualitative and quantitative practice research."], ["since autumn 2023", "Academic work and quantitative social research", "Methodological work, understanding data and critically assessing evidence."], ["2015-2023", "Social policy, methods and R", "Social policy in the BSc, introduction to quantitative methods and R teaching in the CAS Data Analysis."], ["since autumn 2023", "Bachelor's and master's theses", "Supervision of empirical work with a focus on research question, design and interpretation."]],
       transferTag: "Practice transfer example",
@@ -720,6 +730,8 @@ const translations = {
       specialTitle: "Thèmes actuels dans des formats compacts",
       specialText: "Les modules spéciaux sont des modules de 3 ECTS dans lesquels les étudiantes et étudiants traitent, pendant le bachelor, des questions actuelles, des développements et des thèmes spécifiques du travail social. Ils peuvent être développés au sein de la BFH ou avec des professionnel-le-s du terrain.",
       specialItems: ["Formats: module bloc, coopération avec la pratique, haute école partenaire, COIL, voyage d'études ou conférence", "Perspectives: pratique, recherche, comparaison, interdisciplinarité et internationalité", "Processus: esquisse d'idée, sélection, réalisation et évaluation du module"],
+      specialContact: "Les professionnel-le-s intéressé-e-s peuvent me contacter pour une première appréciation.",
+      specialFlyer: "Ouvrir le flyer des modules spéciaux",
       listTitle: "Autres enseignements et accompagnements",
       offers: [["Automne 2024-2025", "Data Skills for Social Work Professionals", "Analyse de données avec des questions réelles issues d'organisations du travail social."], ["Automne 2024", "Digitalized Social Work", "Outils numériques, possibilités et risques pour la pratique du travail social."], ["Printemps 2024", "Large Language Models dans la recherche de pratique", "Atelier de recherche sur les LLM dans la recherche de pratique qualitative et quantitative."], ["depuis automne 2023", "Travail scientifique et recherche sociale quantitative", "Travail méthodologique, compréhension des données et évaluation critique des preuves."], ["2015-2023", "Politique sociale, méthodes et R", "Politique sociale en bachelor, introduction aux méthodes quantitatives et enseignement de R dans le CAS Analyse de données."], ["depuis automne 2023", "Travaux de bachelor et de master", "Accompagnement de travaux empiriques avec un accent sur la question de recherche, le design et l'interprétation."]],
       transferTag: "Exemple de transfert vers la pratique",
@@ -852,6 +864,11 @@ if (t.teaching) {
   document.querySelectorAll("#lehre .teaching-highlight li").forEach((item, index) => {
     item.textContent = teaching.specialItems[index] || item.textContent;
   });
+  const specialContact = document.querySelector("#lehre .special-contact");
+  if (specialContact) {
+    specialContact.innerHTML = teaching.specialContact + " " +
+      `<a class="text-link" href="${SPECIAL_FLYER_LINK}" target="_blank" rel="noreferrer">${teaching.specialFlyer}</a>`;
+  }
   setText("#lehre .teaching-offers > h3", teaching.listTitle);
   document.querySelectorAll("#lehre .teaching-offer").forEach((card, index) => {
     const offer = teaching.offers[index];
