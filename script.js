@@ -25,7 +25,7 @@ const translations = {
     teachingButton: "Lehre",
     teaching: {
       kicker: "Lehre",
-      title: "Spezialmodule im Bachelor Soziale Arbeit.",
+      title: "Lehre zwischen Praxis, Daten und Methoden.",
       intro: "Ich lehre im Bachelor und Master Soziale Arbeit zu Daten, Digitalisierung, quantitativen Methoden und Sozialpolitik. Im Zentrum stehen Formate, die aktuelle Fragen, Praxisbezug und forschungsbasiertes Arbeiten verbinden.",
       specialTag: "Spezialmodule · Bachelor Soziale Arbeit · seit HS 2023",
       specialTitle: "Aktuelle Themen in kompakten Formaten",
@@ -98,7 +98,7 @@ const translations = {
     teachingButton: "Teaching",
     teaching: {
       kicker: "Teaching",
-      title: "Special modules in the Bachelor programme in Social Work.",
+      title: "Teaching between practice, data and methods.",
       intro: "I teach in the Bachelor and Master programmes in Social Work on data, digitalisation, quantitative methods and social policy. The focus is on formats that connect current questions, practice links and research-based work.",
       specialTag: "Special modules · Bachelor Social Work · since autumn semester 2023",
       specialTitle: "Current topics in compact formats",
@@ -168,7 +168,7 @@ const translations = {
     teachingButton: "Enseignement",
     teaching: {
       kicker: "Enseignement",
-      title: "Modules spéciaux dans le bachelor en travail social.",
+      title: "Enseignement entre pratique, données et méthodes.",
       intro: "J'enseigne dans les programmes bachelor et master en travail social sur les données, la numérisation, les méthodes quantitatives et la politique sociale. L'accent porte sur des formats qui relient questions actuelles, lien à la pratique et travail fondé sur la recherche.",
       specialTag: "Modules spéciaux · bachelor en travail social · depuis le semestre d'automne 2023",
       specialTitle: "Thèmes actuels dans des formats compacts",
