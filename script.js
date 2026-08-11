@@ -5,6 +5,8 @@ const IORG_LINK =
   "https://www.bfh.ch/soziale-arbeit/de/forschung/forschungsbereiche/institut-organisation-sozialmanagement/";
 const SPECIAL_FLYER_LINK =
   "https://www.bfh.ch/dam/jcr:9e64e5ff-9542-4e6e-8cf6-9fad97499765/240312_Flyer_Spezialmodule.pdf";
+const MANUEL_INSBERG_LINK =
+  "https://www.bfh.ch/de/ueber-die-bfh/personen/uzgxebme7fda/";
 const makeLink = (href, text) =>
   `<a class="inline-link" href="${href}" target="_blank" rel="noreferrer">${text}</a>`;
 
@@ -31,14 +33,13 @@ const translations = {
       intro: "Ich lehre im Bachelor und Master Soziale Arbeit zu Daten, Digitalisierung, quantitativen Methoden und Sozialpolitik. Im Zentrum stehen Formate, die aktuelle Fragen, Praxisbezug und forschungsbasiertes Arbeiten verbinden.",
       specialTag: "Spezialmodule · Bachelor Soziale Arbeit · seit HS 2023",
       specialTitle: "Aktuelle Themen in kompakten Formaten",
-      specialText: "Spezialmodule sind 3-ECTS-Module, in denen Studierende während des Bachelorstudiums aktuelle Fragen, Entwicklungen und spezifische Themen der Sozialen Arbeit bearbeiten. Die Module können aus der BFH heraus oder gemeinsam mit Fachpersonen aus dem Praxisfeld entwickelt werden.",
-      specialItems: ["Formate: Blockmodul, Praxiskooperation, Partnerhochschule, COIL, Studienreise oder Tagung", "Perspektiven: Praxis, Forschung, Vergleich, Interdisziplinarität und Internationalität", "Prozess: Ideenskizze, Auswahl, Durchführung und Evaluation des Moduls"],
-      specialContact: "Interessierte Fachpersonen können mich für eine erste Einschätzung kontaktieren.",
+      specialText: `Die Spezialmodule verantworte ich gemeinsam mit ${makeLink(MANUEL_INSBERG_LINK, "Dr. Manuel Insberg")}. Es sind 3-ECTS-Module, in denen Studierende während des Bachelorstudiums aktuelle Fragen, Entwicklungen und spezifische Themen der Sozialen Arbeit bearbeiten.`,
+      specialContact: "Praxisorganisationen, die eine spezifische Thematik in die Lehre einbringen und so den gegenseitigen Austausch mit der BFH fördern möchten, können auf uns zukommen.",
       specialFlyer: "Flyer Spezialmodule öffnen",
       listTitle: "Weitere Lehrangebote und Begleitungen",
       offers: [["HS 2024-2025", "Data Skills for Social Work Professionals", "Datenanalyse mit realen Fragestellungen aus Organisationen der Sozialen Arbeit."], ["HS 2024", "Digitalized Social Work", "Digitale Werkzeuge, Chancen und Risiken für die Praxis Sozialer Arbeit."], ["FS 2024", "Large Language Models in der Praxisforschung", "Forschungswerkstatt zu LLM in qualitativer und quantitativer Praxisforschung."], ["seit HS 2023", "Wissen erarbeiten und quantitative Sozialforschung", "Methodisches Arbeiten, Daten verstehen, Evidenz kritisch bewerten."], ["2015-2023", "Sozialpolitik, Methoden und R", "Sozialpolitik im BSc, Einführung in quantitative Methoden und R-Lehre im CAS Datenanalyse."], ["seit HS 2023", "Bachelor- und Masterarbeiten", "Begleitung empirischer Arbeiten mit Fokus auf Forschungsfrage, Design und Interpretation."]],
       transferTag: "Beispiel Spezialmodul mit Praxistransfer",
-      transferText: "Im Modul Data Skills wurden Analysen zu Nutzungs- und Bevölkerungsdaten der JuBU später in der Kommunikation der Praxisorganisation aufgegriffen. Der LinkedIn-Beitrag zeigt den Kontext und das verwendete Bildmaterial.",
+      transferText: "Im Spezialmodul Data Skills for Social Work Professionals wurden Daten der offenen Kinder- und Jugendarbeit Burgdorf und Umgebung (JuBU) analysiert. Der LinkedIn-Beitrag zeigt den Kontext und die Analysen.",
       transferLink: "LinkedIn-Beitrag öffnen",
     },
     publicationButton: "Ausgewählte Publikationen",
@@ -106,14 +107,13 @@ const translations = {
       intro: "I teach in the Bachelor and Master programmes in Social Work on data, digitalisation, quantitative methods and social policy. The focus is on formats that connect current questions, practice links and research-based work.",
       specialTag: "Special modules · Bachelor Social Work · since autumn semester 2023",
       specialTitle: "Current topics in compact formats",
-      specialText: "Special modules are 3 ECTS modules in which students work on current questions, developments and specific topics in social work during the Bachelor programme. Modules can be developed from within BFH or together with professionals from the field.",
-      specialItems: ["Formats: block module, practice cooperation, partner university, COIL, study trip or conference", "Perspectives: practice, research, comparison, interdisciplinarity and internationality", "Process: idea sketch, selection, implementation and evaluation of the module"],
-      specialContact: "Interested professionals can contact me for an initial assessment.",
+      specialText: `I am responsible for the special modules together with ${makeLink(MANUEL_INSBERG_LINK, "Dr. Manuel Insberg")}. They are 3 ECTS modules in which students work on current questions, developments and specific topics in social work during the Bachelor programme.`,
+      specialContact: "Practice organisations that would like to bring a specific topic into teaching and strengthen mutual exchange with BFH are welcome to contact us.",
       specialFlyer: "Open special modules flyer",
       listTitle: "Further courses and supervision",
       offers: [["Autumn 2024-2025", "Data Skills for Social Work Professionals", "Data analysis with real questions from social work organisations."], ["Autumn 2024", "Digitalized Social Work", "Digital tools, opportunities and risks for social work practice."], ["Spring 2024", "Large Language Models in practice research", "Research workshop on LLMs in qualitative and quantitative practice research."], ["since autumn 2023", "Academic work and quantitative social research", "Methodological work, understanding data and critically assessing evidence."], ["2015-2023", "Social policy, methods and R", "Social policy in the BSc, introduction to quantitative methods and R teaching in the CAS Data Analysis."], ["since autumn 2023", "Bachelor's and master's theses", "Supervision of empirical work with a focus on research question, design and interpretation."]],
       transferTag: "Example of a special module with practice transfer",
-      transferText: "In the Data Skills module, analyses of JuBU usage and population data were later taken up in the practice organisation's communication. The LinkedIn post shows the context and the image material used.",
+      transferText: "In the special module Data Skills for Social Work Professionals, data from open child and youth work in Burgdorf and the surrounding area (JuBU) were analysed. The LinkedIn post shows the context and the analyses.",
       transferLink: "Open LinkedIn post",
     },
     publicationButton: "Selected publications",
@@ -178,14 +178,13 @@ const translations = {
       intro: "J'enseigne dans les programmes bachelor et master en travail social sur les données, la numérisation, les méthodes quantitatives et la politique sociale. L'accent porte sur des formats qui relient questions actuelles, lien à la pratique et travail fondé sur la recherche.",
       specialTag: "Modules spéciaux · bachelor en travail social · depuis le semestre d'automne 2023",
       specialTitle: "Thèmes actuels dans des formats compacts",
-      specialText: "Les modules spéciaux sont des modules de 3 ECTS dans lesquels les étudiantes et étudiants traitent, pendant le bachelor, des questions actuelles, des développements et des thèmes spécifiques du travail social. Ils peuvent être développés au sein de la BFH ou avec des professionnel-le-s du terrain.",
-      specialItems: ["Formats: module bloc, coopération avec la pratique, haute école partenaire, COIL, voyage d'études ou conférence", "Perspectives: pratique, recherche, comparaison, interdisciplinarité et internationalité", "Processus: esquisse d'idée, sélection, réalisation et évaluation du module"],
-      specialContact: "Les professionnel-le-s intéressé-e-s peuvent me contacter pour une première appréciation.",
+      specialText: `Je suis responsable des modules spéciaux avec ${makeLink(MANUEL_INSBERG_LINK, "Dr. Manuel Insberg")}. Ce sont des modules de 3 ECTS dans lesquels les étudiantes et étudiants traitent, pendant le bachelor, des questions actuelles, des développements et des thèmes spécifiques du travail social.`,
+      specialContact: "Les organisations de terrain qui souhaitent apporter une thématique spécifique dans l'enseignement et renforcer l'échange mutuel avec la BFH peuvent nous contacter.",
       specialFlyer: "Ouvrir le flyer des modules spéciaux",
       listTitle: "Autres enseignements et accompagnements",
       offers: [["Automne 2024-2025", "Data Skills for Social Work Professionals", "Analyse de données avec des questions réelles issues d'organisations du travail social."], ["Automne 2024", "Digitalized Social Work", "Outils numériques, possibilités et risques pour la pratique du travail social."], ["Printemps 2024", "Large Language Models dans la recherche de pratique", "Atelier de recherche sur les LLM dans la recherche de pratique qualitative et quantitative."], ["depuis automne 2023", "Travail scientifique et recherche sociale quantitative", "Travail méthodologique, compréhension des données et évaluation critique des preuves."], ["2015-2023", "Politique sociale, méthodes et R", "Politique sociale en bachelor, introduction aux méthodes quantitatives et enseignement de R dans le CAS Analyse de données."], ["depuis automne 2023", "Travaux de bachelor et de master", "Accompagnement de travaux empiriques avec un accent sur la question de recherche, le design et l'interprétation."]],
       transferTag: "Exemple de module spécial avec transfert vers la pratique",
-      transferText: "Dans le module Data Skills, des analyses des données d'utilisation et de population de la JuBU ont ensuite été reprises dans la communication de l'organisation de terrain. La publication LinkedIn montre le contexte et le matériel visuel utilisé.",
+      transferText: "Dans le module spécial Data Skills for Social Work Professionals, des données de l'animation enfance et jeunesse ouverte de Burgdorf et des environs (JuBU) ont été analysées. La publication LinkedIn montre le contexte et les analyses.",
       transferLink: "Ouvrir la publication LinkedIn",
     },
     publicationButton: "Publications choisies",
@@ -310,10 +309,7 @@ if (t.teaching) {
   setText("#lehre .teaching-intro", teaching.intro);
   setText("#lehre .teaching-highlight .tag", teaching.specialTag);
   setText("#lehre .teaching-highlight h3", teaching.specialTitle);
-  setText("#lehre .teaching-highlight p", teaching.specialText);
-  document.querySelectorAll("#lehre .teaching-highlight li").forEach((item, index) => {
-    item.textContent = teaching.specialItems[index] || item.textContent;
-  });
+  setHTML("#lehre .teaching-highlight p", teaching.specialText);
   const specialContact = document.querySelector("#lehre .special-contact");
   if (specialContact) {
     specialContact.innerHTML = teaching.specialContact + " " +
