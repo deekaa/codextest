@@ -1142,3 +1142,32 @@ h3 {
 .special-contact .text-link {
   margin-left: 8px;
 }
+
+
+.transfer-image {
+  grid-column: 2 / -1;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.transfer-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.transfer-image figcaption {
+  padding: 10px 12px 12px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 920px) {
+  .transfer-image {
+    grid-column: 1;
+  }
+}

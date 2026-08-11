@@ -126,6 +126,10 @@
               Kinder- und Jugendarbeit Burgdorf und Umgebung (JuBU) analysiert. Der LinkedIn-Beitrag
               zeigt den Kontext und die Analysen.
             </p>
+            <figure class="transfer-image">
+              <img src="./assets/data-skills-jubu-reach.jpg" alt="Diagramm zur Reichweite der JuBU pro 1'000 Kinder in der Region von 2010 bis 2024" loading="lazy" />
+              <figcaption>Analyse aus dem Spezialmodul: Reichweite der JuBU pro 1'000 Kinder in der Region, 2010-2024.</figcaption>
+            </figure>
             <a class="text-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7425189380291567616/" target="_blank" rel="noreferrer">LinkedIn-Beitrag öffnen</a>
           </aside>
 
@@ -587,6 +591,8 @@ const translations = {
       offers: [["HS 2024-2025", "Data Skills for Social Work Professionals", "Datenanalyse mit realen Fragestellungen aus Organisationen der Sozialen Arbeit."], ["HS 2024", "Digitalized Social Work", "Digitale Werkzeuge, Chancen und Risiken für die Praxis Sozialer Arbeit."], ["FS 2024", "Large Language Models in der Praxisforschung", "Forschungswerkstatt zu LLM in qualitativer und quantitativer Praxisforschung."], ["seit HS 2023", "Wissen erarbeiten und quantitative Sozialforschung", "Methodisches Arbeiten, Daten verstehen, Evidenz kritisch bewerten."], ["2015-2023", "Sozialpolitik, Methoden und R", "Sozialpolitik im BSc, Einführung in quantitative Methoden und R-Lehre im CAS Datenanalyse."], ["seit HS 2023", "Bachelor- und Masterarbeiten", "Begleitung empirischer Arbeiten mit Fokus auf Forschungsfrage, Design und Interpretation."]],
       transferTag: "Beispiel Spezialmodul mit Praxistransfer",
       transferText: "Im Spezialmodul Data Skills for Social Work Professionals wurden Daten der offenen Kinder- und Jugendarbeit Burgdorf und Umgebung (JuBU) analysiert. Der LinkedIn-Beitrag zeigt den Kontext und die Analysen.",
+      transferImageAlt: "Diagramm zur Reichweite der JuBU pro 1'000 Kinder in der Region von 2010 bis 2024",
+      transferImageCaption: "Analyse aus dem Spezialmodul: Reichweite der JuBU pro 1'000 Kinder in der Region, 2010-2024.",
       transferLink: "LinkedIn-Beitrag öffnen",
     },
     publicationButton: "Ausgewählte Publikationen",
@@ -661,6 +667,8 @@ const translations = {
       offers: [["Autumn 2024-2025", "Data Skills for Social Work Professionals", "Data analysis with real questions from social work organisations."], ["Autumn 2024", "Digitalized Social Work", "Digital tools, opportunities and risks for social work practice."], ["Spring 2024", "Large Language Models in practice research", "Research workshop on LLMs in qualitative and quantitative practice research."], ["since autumn 2023", "Academic work and quantitative social research", "Methodological work, understanding data and critically assessing evidence."], ["2015-2023", "Social policy, methods and R", "Social policy in the BSc, introduction to quantitative methods and R teaching in the CAS Data Analysis."], ["since autumn 2023", "Bachelor's and master's theses", "Supervision of empirical work with a focus on research question, design and interpretation."]],
       transferTag: "Example of a special module with practice transfer",
       transferText: "In the special module Data Skills for Social Work Professionals, data from open child and youth work in Burgdorf and the surrounding area (JuBU) were analysed. The LinkedIn post shows the context and the analyses.",
+      transferImageAlt: "Chart showing JuBU reach per 1,000 children in the region from 2010 to 2024",
+      transferImageCaption: "Analysis from the special module: JuBU reach per 1,000 children in the region, 2010-2024.",
       transferLink: "Open LinkedIn post",
     },
     publicationButton: "Selected publications",
@@ -732,6 +740,8 @@ const translations = {
       offers: [["Automne 2024-2025", "Data Skills for Social Work Professionals", "Analyse de données avec des questions réelles issues d'organisations du travail social."], ["Automne 2024", "Digitalized Social Work", "Outils numériques, possibilités et risques pour la pratique du travail social."], ["Printemps 2024", "Large Language Models dans la recherche de pratique", "Atelier de recherche sur les LLM dans la recherche de pratique qualitative et quantitative."], ["depuis automne 2023", "Travail scientifique et recherche sociale quantitative", "Travail méthodologique, compréhension des données et évaluation critique des preuves."], ["2015-2023", "Politique sociale, méthodes et R", "Politique sociale en bachelor, introduction aux méthodes quantitatives et enseignement de R dans le CAS Analyse de données."], ["depuis automne 2023", "Travaux de bachelor et de master", "Accompagnement de travaux empiriques avec un accent sur la question de recherche, le design et l'interprétation."]],
       transferTag: "Exemple de module spécial avec transfert vers la pratique",
       transferText: "Dans le module spécial Data Skills for Social Work Professionals, des données de l'animation enfance et jeunesse ouverte de Burgdorf et des environs (JuBU) ont été analysées. La publication LinkedIn montre le contexte et les analyses.",
+      transferImageAlt: "Graphique montrant la portée de la JuBU pour 1 000 enfants dans la région de 2010 à 2024",
+      transferImageCaption: "Analyse issue du module spécial: portée de la JuBU pour 1 000 enfants dans la région, 2010-2024.",
       transferLink: "Ouvrir la publication LinkedIn",
     },
     publicationButton: "Publications choisies",
@@ -872,6 +882,9 @@ if (t.teaching) {
   });
   setText("#lehre .teaching-transfer-note span", teaching.transferTag);
   setText("#lehre .teaching-transfer-note p", teaching.transferText);
+  const transferImage = document.querySelector("#lehre .transfer-image img");
+  if (transferImage) transferImage.alt = teaching.transferImageAlt;
+  setText("#lehre .transfer-image figcaption", teaching.transferImageCaption);
   setText("#lehre .teaching-transfer-note a", teaching.transferLink);
 }
 
