@@ -63,7 +63,7 @@ const translations = {
     projectLinks: { project: "Projektseite", blog: "Datenauswertungen Kinderleicht gemacht" },
     publicationsKicker: "Publikationen",
     publicationsTitle:
-      "Ausgewählte Publikationen sowie Beiträge in Medien und Fachöffentlichkeit.",
+      "Ausgewählte Publikationen und öffentliche Beiträge.",
     peerTitle: "Peer-reviewte Publikationen",
     mediaTitle: "Zeitung und Fernsehen",
     arbor: "Aktualisierte Publikationsliste auf ARBOR",
@@ -136,7 +136,7 @@ const translations = {
     projectLinks: { project: "Project page", blog: "Making data analyses easy" },
     publicationsKicker: "Publications",
     publicationsTitle:
-      "Selected publications and contributions in media and professional debate.",
+      "Selected publications and public contributions.",
     peerTitle: "Peer-reviewed publications",
     mediaTitle: "Newspapers and television",
     arbor: "Updated publication list on ARBOR",
@@ -210,7 +210,7 @@ const translations = {
     projectLinks: { project: "Page du projet", blog: "Des analyses de données simplifiées" },
     publicationsKicker: "Publications",
     publicationsTitle:
-      "Publications choisies et contributions dans les médias et le débat professionnel.",
+      "Publications choisies et contributions publiques.",
     peerTitle: "Publications évaluées par les pairs",
     mediaTitle: "Presse et télévision",
     arbor: "Liste actualisée des publications sur ARBOR",
